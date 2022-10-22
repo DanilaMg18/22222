@@ -22,20 +22,23 @@ let arr = [{
 
 let wrapper = document.querySelector('.wrapper');
 
-function createCard(firstName, wrapper) {
+function createCard(person, wrapper) {
     let card = document.createElement('div');
     card.classList.add("card");
     card.classList.add('one');
-    card.innerHTML =`<p>${firstName}</p>`
+    card.innerHTML =`<p>${person.firstName}</p>
+    <p2>${person.lastName}</p2>
+    <input class ='input' type="text">`
     wrapper.append(card);
 }
+
+let input = document.querySelector('.input')
 
 
 
 for(let i=0; i < arr.length; i++) {
     createCard(arr[i], wrapper)
 }
- 
 //  2. Для каждого объекта создай карточку, с помощью специальной функции, которую ты напишешь сам(а), которая будет принимать первым аргументом строку, вторым массив, и фильтровать массив так: 
 //  3. Если в поле объекта name будет найдена строка из поля ввода, то такой объект оставить )
 //  4. Создай поле ввода (input)  и напиши ему обработчик который будет получать введённое значение из поля ввода.
