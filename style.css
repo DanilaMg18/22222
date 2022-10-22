@@ -1,0 +1,16 @@
+.wrapper {
+ display: flex;
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    background-color: darkkhaki;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-left: 50px;
+}s
